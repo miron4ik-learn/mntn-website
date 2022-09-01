@@ -150,12 +150,13 @@
 
 // Set the container in one statement
 
-@mixin container ($max-width, $padding) {
-  max-width: $max-width;
-  width: 100%;
-  padding: $padding;
-  margin-left: auto;
-  margin-right: auto;
+@mixin container ($max-width, $padding: false) {
+  @include responsive-width ($max-width);
+  @include center-block;
+
+  @if $padding {
+    padding: $padding;
+  }
 }
 
 

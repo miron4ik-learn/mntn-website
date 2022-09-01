@@ -1,5 +1,13 @@
 // Body
 
 body {
-  background: var(--body-color) url('@img/bg.png') no-repeat center / cover;
+  background: var(--body-color) url('@img/bg.png') no-repeat center top;
+}
+
+
+
+// Container
+
+.container {
+  @include container (1462px);
 }

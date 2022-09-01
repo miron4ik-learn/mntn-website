@@ -1,0 +1,65 @@
+// Posts
+
+.posts {
+  margin-top: 340px;
+
+  &__wrapper {
+    @include flex-column;
+    row-gap: 200px;
+  }
+}
+
+
+
+// Post
+
+.post {
+  @include flex-center-between;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  &__info {
+    position: relative;
+    width: 632px;
+
+    @include flex-column;
+    align-items: flex-start;
+    row-gap: 27px;
+
+    @include pseudo-before ($content: attr(data-number)) {
+      font-weight: 700;
+      font-size: 240px;
+      line-height: 240px;
+      opacity: .1;
+  
+      top: -103px;
+      left: -150px;
+    }
+  }
+
+  &__img {
+    size: 566px 720px;
+    object-fit: cover;
+  }
+
+  &__description {
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 700;
+    color: var(--primary-color);
+
+    @include pseudo-after {
+      size: 16px 24px;
+      background: url('@img/arrow.svg') no-repeat center / contain;
+
+      @include transform-center-ver;
+      right: -32px;
+    }
+  }
+}
