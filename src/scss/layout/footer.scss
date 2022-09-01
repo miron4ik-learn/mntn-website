@@ -1,0 +1,68 @@
+// Footer
+
+.footer {
+  margin-top: 200px;
+  padding-bottom: 120px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 347px;
+
+    @include flex-column;
+  }
+
+  &__logo {
+    size: 108px 38px;
+    svg { height: 38px }
+  }
+
+  &__description {
+    width: 300px;
+    margin-top: 24px;
+
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__rights {
+    margin-top: 122px;
+    font-weight: 500;
+    line-height: 32px;
+    opacity: .5;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 212px;
+  }
+
+  &__nav {
+    @include flex-column;
+
+    &__title {
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: var(--biggest-font);
+      line-height: 32px;
+      color: var(--primary-color);
+    }
+
+    &__link {
+      font-weight: 500;
+      line-height: 32px;
+      transition: .3s;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
