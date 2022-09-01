@@ -1,0 +1,49 @@
+// Header
+
+.header {
+  width: 100%;
+  padding: 64px 80px;
+
+  @include position (absolute, $t: 0, $l: 0, $z: 1);
+  @include flex-center-between;
+
+  &__logo {
+    display: inline-block;
+    size: 108px 24px;
+  }
+
+  &__nav {
+    @include flex-center-ver;
+    column-gap: 40px;
+
+    &__link {
+      font-weight: 700;
+      line-height: 22px;
+      transition: .3s;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  &__account {
+    @include flex-center-ver;
+    column-gap: 8px;
+
+    &:hover &__text {
+      color: var(--primary-color);
+    }
+
+    &__icon {
+      size: 24px;
+    }
+
+    &__text {
+      line-height: 21px;
+      font-weight: 700;
+      font-size: var(--small-font);
+      transition: .3s;
+    }
+  }
+}
