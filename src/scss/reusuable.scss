@@ -1,1 +1,5 @@
-// Reusuable CSS
+// Body
+
+body {
+  background: var(--body-color) url('@img/bg.png') no-repeat center / cover;
+}

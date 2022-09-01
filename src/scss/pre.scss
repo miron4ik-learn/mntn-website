@@ -15,10 +15,11 @@ body, input, button {
 }
 
 body {
-  background: var(--body-color);
+  background-color: var(--body-color);
 }
 
 h1, h2 {
+  line-height: 77px;
   font-family: var(--title-font);
   font-weight: 600;
 }
