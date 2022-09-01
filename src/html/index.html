@@ -11,15 +11,21 @@
   <title>MNTN – Landing Page</title>
 </head>
 <body>
-  @@include('layout/header.html')
+  <div class="page">
+    <div class="preview">
+      <div class="preview__image"></div>
+    </div>
 
-  <main class="main">
-    @@include('include/home.html')
+    @@include('layout/header.html')
 
-    @@include('include/posts.html')
-  </main>
+    <main>
+      @@include('include/home.html')
 
-  @@include('layout/footer.html')
+      @@include('include/posts.html')
+    </main>
+
+    @@include('layout/footer.html')
+  </div>
   
   <!-- JavaScript -->
   <script src="js/app.min.js"></script>

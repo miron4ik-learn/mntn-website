@@ -1,6 +1,9 @@
 // Posts
 
 .posts {
+  position: relative;
+  z-index: 1;
+
   margin-top: 340px;
 
   &__wrapper {

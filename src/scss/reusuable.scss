@@ -1,7 +1,24 @@
-// Body
+// Page
 
-body {
-  background: var(--body-color) url('@img/bg.png') no-repeat center top;
+.page {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px;
+}
+
+
+
+.preview {
+  transform-style: preserve-3d;
+
+  &__image {
+    size: 100% 1900px;
+    background: var(--body-color) url('@img/bg.png') no-repeat center top;
+
+    @include position (absolute, $t: 0, $l: 0);
+    transform: translateZ(-100px) scale(2);
+  }
 }
 
 
