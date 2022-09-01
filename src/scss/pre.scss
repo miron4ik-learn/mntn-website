@@ -1,0 +1,37 @@
+// Pre-CSS
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body, input, button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font);
+  color: var(--text-color);
+}
+
+body {
+  background: var(--body-color);
+}
+
+h1, h2 {
+  font-family: var(--title-font);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

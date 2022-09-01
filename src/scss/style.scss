@@ -1,0 +1,38 @@
+// Utils vars
+@import './utils/vars';
+
+// Utils functions
+@import './utils/functions';
+
+// Utils mixins
+@import './utils/mixins/media';
+@import './utils/mixins/mixins';
+@import './utils/mixins/flexbox';
+
+// Fonts
+@import './fonts';
+
+// CSS variables
+:root {
+  // Colors
+  --primary-color: #fbd784;
+  --text-color: #fff;
+  --body-color: #0b1d26;
+
+  // Font and typography
+  --body-font: 'Gilroy', sans-serif;
+  --title-font: 'ChronicleDisplay', serif;
+
+  --h1-font: 88px;
+  --h2-font: 64px;
+
+  --normal-font: 18px;
+  --biggest-font: 24px;
+  --small-font: 17px;
+}
+
+// Pre-CSS
+@import './pre';
+
+// Reusuable CSS
+@import './reusuable';
